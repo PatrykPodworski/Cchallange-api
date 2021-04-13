@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
 using CChallange.Api.Models;
-using CChallange.SubmitionsService;
+using CChallange.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace CChallangeAPI.Controllers
 {
@@ -10,12 +9,10 @@ namespace CChallangeAPI.Controllers
     [Route("[controller]")]
     public class SubmitTaskController : ControllerBase
     {
-        private readonly ILogger<SubmitTaskController> _logger;
         private readonly ISubmitionService submitionService;
 
-        public SubmitTaskController(ILogger<SubmitTaskController> logger, ISubmitionService submitionService)
+        public SubmitTaskController(ISubmitionService submitionService)
         {
-            _logger = logger;
             this.submitionService = submitionService;
         }
 

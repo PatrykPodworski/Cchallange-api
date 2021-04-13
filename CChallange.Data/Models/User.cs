@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CChallange.Data
 {
@@ -6,5 +7,7 @@ namespace CChallange.Data
     {
         public string Id { get; set; }
         public string Name { get; set; }
+
+        public virtual IEnumerable<Submition> Submitions { get; set; }
     }
 }

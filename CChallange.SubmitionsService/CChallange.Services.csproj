@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>CChallange.Services</AssemblyName>
+    <RootNamespace>CChallange.Services</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

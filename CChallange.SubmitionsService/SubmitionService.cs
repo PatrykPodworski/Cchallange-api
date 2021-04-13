@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
-namespace CChallange.SubmitionsService
+namespace CChallange.Services
 {
     public class SubmitionService : ISubmitionService
     {

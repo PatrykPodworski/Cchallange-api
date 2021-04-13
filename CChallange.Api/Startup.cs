@@ -1,6 +1,6 @@
 using CChallange.Data;
 using CChallange.JdoodleService;
-using CChallange.SubmitionsService;
+using CChallange.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +24,7 @@ namespace CChallangeAPI
             services.AddControllers();
             services.AddScoped<IJdoodleService, JdoodleService>();
             services.AddScoped<ISubmitionService, SubmitionService>();
+            services.AddScoped<IHighscoresService, HighscoresService>();
             services.AddScoped<CChallangeDbContext, CChallangeDbContext>();
         }
 

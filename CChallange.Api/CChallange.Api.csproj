@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CChallange.Data\CChallange.Data.csproj" />
     <ProjectReference Include="..\CChallange.JdoodleService\CChallange.JdoodleService.csproj" />
-    <ProjectReference Include="..\CChallange.SubmitionsService\CChallange.SubmitionsService.csproj" />
+    <ProjectReference Include="..\CChallange.SubmitionsService\CChallange.Services.csproj" />
   </ItemGroup>
 
 
