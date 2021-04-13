@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CChallange.Api", "CChallangeAPI\CChallange.Api.csproj", "{FAE86587-E5F0-48A4-9D08-EC42263A5E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CChallange.Api", "CChallange.Api\CChallange.Api.csproj", "{FAE86587-E5F0-48A4-9D08-EC42263A5E00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CChallange.Data", "CChallange.Data\CChallange.Data.csproj", "{94AF2D48-6117-4054-A955-61B5404D5A93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CChallange.Data", "CChallange.Data\CChallange.Data.csproj", "{94AF2D48-6117-4054-A955-61B5404D5A93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CChallange.JdoodleService", "CChallange.JdoodleService\CChallange.JdoodleService.csproj", "{079B47B2-9EE5-4550-9B42-602912357F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{94AF2D48-6117-4054-A955-61B5404D5A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94AF2D48-6117-4054-A955-61B5404D5A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94AF2D48-6117-4054-A955-61B5404D5A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079B47B2-9EE5-4550-9B42-602912357F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079B47B2-9EE5-4550-9B42-602912357F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079B47B2-9EE5-4550-9B42-602912357F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079B47B2-9EE5-4550-9B42-602912357F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
