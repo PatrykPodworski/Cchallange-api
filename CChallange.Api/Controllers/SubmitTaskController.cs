@@ -22,7 +22,9 @@ namespace CChallangeAPI.Controllers
         [HttpPost]
         public async Task<StatusCodeResult> SubmitAsync(SubmitTaskModel model)
         {
-            await jdoodleService.CompileCodeAsync(model.SolutionCode);
+            var input = "input";
+            var expectedOutput = "input";
+            var output = await jdoodleService.CompileCodeAsync(model.SolutionCode, input).ConfigureAwait(false);
 
             return new OkResult();
         }

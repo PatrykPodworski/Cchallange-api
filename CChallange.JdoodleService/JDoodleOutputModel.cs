@@ -2,9 +2,9 @@
 {
     public class JDoodleOutputModel
     {
-        public string Output { get; set; }
-        public int StatusCode { get; set; }
-        public double Memory { get; set; }
-        public double CpuTime { get; set; }
+        public string output { get; set; }
+        public int statusCode { get; set; }
+        public double memory { get; set; }
+        public double cpuTime { get; set; }
     }
 }

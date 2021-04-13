@@ -4,6 +4,6 @@ namespace CChallange.JdoodleService
 {
     public interface IJdoodleService
     {
-        Task CompileCodeAsync(string code);
+        Task<string> CompileCodeAsync(string code, string input);
     }
 }
