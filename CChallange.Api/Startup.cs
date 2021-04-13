@@ -1,4 +1,6 @@
+using CChallange.Data;
 using CChallange.JdoodleService;
+using CChallange.SubmitionsService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +23,8 @@ namespace CChallangeAPI
         {
             services.AddControllers();
             services.AddScoped<IJdoodleService, JdoodleService>();
+            services.AddScoped<ISubmitionService, SubmitionService>();
+            services.AddScoped<CChallangeDbContext, CChallangeDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

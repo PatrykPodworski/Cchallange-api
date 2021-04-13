@@ -1,16 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>CChallange.Api</AssemblyName>
-    <RootNamespace>CChallange.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CChallange.Data\CChallange.Data.csproj" />
     <ProjectReference Include="..\CChallange.JdoodleService\CChallange.JdoodleService.csproj" />
-    <ProjectReference Include="..\CChallange.SubmitionsService\CChallange.SubmitionsService.csproj" />
   </ItemGroup>
-
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using CChallange.Api.Models;
-using CChallange.JdoodleService;
+using CChallange.SubmitionsService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -11,22 +11,25 @@ namespace CChallangeAPI.Controllers
     public class SubmitTaskController : ControllerBase
     {
         private readonly ILogger<SubmitTaskController> _logger;
-        private readonly IJdoodleService jdoodleService;
+        private readonly ISubmitionService submitionService;
 
-        public SubmitTaskController(ILogger<SubmitTaskController> logger, IJdoodleService  jdoodleService)
+        public SubmitTaskController(ILogger<SubmitTaskController> logger, ISubmitionService submitionService)
         {
             _logger = logger;
-            this.jdoodleService = jdoodleService;
+            this.submitionService = submitionService;
         }
 
         [HttpPost]
-        public async Task<StatusCodeResult> SubmitAsync(SubmitTaskModel model)
+        public async Task<ActionResult> SubmitAsync(SubmitTaskModel model)
         {
-            var input = "input";
-            var expectedOutput = "input";
-            var output = await jdoodleService.CompileCodeAsync(model.SolutionCode, input).ConfigureAwait(false);
+            var isSolutionCorrect = await submitionService.SubmitAsync(model.TaskId.ToString(), model.SubmissionerName, model.SolutionCode);
 
-            return new OkResult();
+            if (isSolutionCorrect)
+            {
+                return new OkObjectResult("Solution is correct");
+            }
+
+            return new OkObjectResult("Solution is incorrect");
         }
     }
 }
