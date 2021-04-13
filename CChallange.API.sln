@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CChallange.Api", "CChallangeAPI\CChallange.Api.csproj", "{FAE86587-E5F0-48A4-9D08-EC42263A5E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CChallange.Data", "CChallange.Data\CChallange.Data.csproj", "{94AF2D48-6117-4054-A955-61B5404D5A93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE86587-E5F0-48A4-9D08-EC42263A5E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE86587-E5F0-48A4-9D08-EC42263A5E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE86587-E5F0-48A4-9D08-EC42263A5E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE86587-E5F0-48A4-9D08-EC42263A5E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94AF2D48-6117-4054-A955-61B5404D5A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AF2D48-6117-4054-A955-61B5404D5A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AF2D48-6117-4054-A955-61B5404D5A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AF2D48-6117-4054-A955-61B5404D5A93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37A1E7C5-1B28-45D8-B110-78DD88F0F3B1}
+	EndGlobalSection
+EndGlobal
