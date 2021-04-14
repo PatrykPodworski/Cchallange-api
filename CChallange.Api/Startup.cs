@@ -26,6 +26,15 @@ namespace CChallangeAPI
             services.AddScoped<ISubmitionService, SubmitionService>();
             services.AddScoped<IHighscoresService, HighscoresService>();
             services.AddScoped<CChallangeDbContext, CChallangeDbContext>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Any",
+                builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +48,8 @@ namespace CChallangeAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("Any");
 
             app.UseAuthorization();
 
